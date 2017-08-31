@@ -41,19 +41,7 @@ export default class App extends Component {
           onPress={() => navigate('DetailsScreen',{user:'Satish'})}
           title="Details Screen"
         />
-        <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => 
-        <View>
-          <Text>{rowData.title}</Text>
-          <Text>{rowData.description}</Text>
-          <Text>{rowData.views}</Text>
-          <Button title ="Link to course" />
-          <Image source={{uri: rowData.image}} 
-          style={{width: 300, height: 200}}/>
-
-          </View>}
-      />
+   
       </View>
     );
   }
